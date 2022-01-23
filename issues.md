@@ -9,7 +9,7 @@
 ## Semi Severe:
 <ul>
     <li>
-    Not allowing multiple words for file name. 
+    Not allowing multiple words for file name upon writing. 
     </li>
 </ul>
 <br>
