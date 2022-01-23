@@ -23,7 +23,11 @@ void read(std::string filename){
     }
 
     file.close();
-    system("pause");
+    
+    std::cout << "Press any key and then enter key to continue...";
+    int i;
+    std::cin >> i;
+
     return;
 }
 
