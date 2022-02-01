@@ -31,6 +31,14 @@ void read(std::string filename){
     return;
 }
 
+void nuke(char filename[]){
+    const int nuke = remove(filename);
+    if(!nuke){
+        std::cout << "File deletion failed!" << std::endl;
+    }
+    return;
+}
+
 int main(void){
     using namespace std;
     cout << "Welcome to Notetakr++, What option?  ";
@@ -57,6 +65,12 @@ int main(void){
         cout << "What is the name of the file?  ";  cin >> name;
         
         read(name);
+    } else if(opt =="nuke"){
+        char name[] = "name";
+
+        cout << "What is the name of the file you would like to nuke?  "; cin >> name;
+        nuke(name);
+
     } else {
         std::cerr << "ERROR: Invalid option";
         return 1;
